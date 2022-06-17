@@ -1,2 +1,3 @@
 Friday the 17th: 
 Create project proposal & Trello
+Setting up github repo
