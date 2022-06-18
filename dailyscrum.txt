@@ -1,3 +1,6 @@
 Friday the 17th: 
 Create project proposal & Trello
 Setting up github repo
+
+
+Find online tools and resources that enable us to do our development job in a more easier manner
