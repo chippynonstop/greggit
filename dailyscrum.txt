@@ -4,3 +4,10 @@ Setting up github repo
 
 
 Find online tools and resources that enable us to do our development job in a more easier manner
+
+
+Sunday the 19th:
+Re-create database and EER diagram
+Add content to Trello
+Decide on splitting eventual tasks 
+Create basic template of website
