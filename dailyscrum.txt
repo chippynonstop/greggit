@@ -11,3 +11,21 @@ Re-create database and EER diagram
 Add content to Trello
 Decide on splitting eventual tasks 
 Create basic template of website
+
+
+Monday the 20th:
+What we've done so far:
+Did the database, did the trello, setup the git, found resources online
+
+To do: 
+How to assign roles to users and admin
+Adapt the database to our needs
+Find the right dependencies
+Come up with a homepage/template
+CRUD for creating threads & posts
+
+Olivier: Do registration/login, add sequelize
+Jack: Create article/view article, 
+Muhammad: Create homepage
+
+Need help with:
