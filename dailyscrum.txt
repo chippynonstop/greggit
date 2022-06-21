@@ -13,19 +13,24 @@ Decide on splitting eventual tasks
 Create basic template of website
 
 
-Monday the 20th:
-What we've done so far:
-Did the database, did the trello, setup the git, found resources online
+Monday the 20th: 
+What we've done:
+Did the database, did the trello
 
-To do: 
+To do:
 How to assign roles to users and admin
 Adapt the database to our needs
-Find the right dependencies
-Come up with a homepage/template
-CRUD for creating threads & posts
 
-Olivier: Do registration/login, add sequelize
-Jack: Create article/view article, 
-Muhammad: Create homepage
+Need help with: nothing!
 
-Need help with:
+
+Tuesday the 21st:
+What we've done:
+Connected the database, created registration
+
+To do:
+Create a search bar
+Create an admin role
+Create a dashboard for the admin/user
+
+
