@@ -195,3 +195,45 @@ Jack:
 --------------------------------------------------------------------------------------------------------------------------------
 Wednesday the 22nd:
 
+Olivier:
+  * what have I done since last scrum
+                       - Started coding for moderator role
+                      
+ 
+
+  * what do i need to do for next scrum
+                     - Create search bar
+                     - Create admin role
+                     
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       -Updated the scrum and trello, made a nav bar
+ 
+
+  * what do i need to do for next scrum
+                     - Create a dashboard for the admin/user
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - Continued with the threads
+                       - Created & Displayed subreddits
+ 
+
+  * what do i need to do for next scrum
+                     - Work on the posts
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
