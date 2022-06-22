@@ -1,36 +1,197 @@
 Friday the 17th: 
-Create project proposal & Trello
-Setting up github repo
+Olivier:
+  * what have I done since last scrum
+                       - N/A
+
+  * what do i need to do for next scrum
+                     - Create project proposal
+                     - Setup github repository for code
+                     - Come up with database design
+                     - Come up with mockups for website
+                     
+
+  * are there any problems stopping me or need help with
+                     - finding out what resources are best suited for react project, more research needs to be done in this regard
 
 
-Find online tools and resources that enable us to do our development job in a more easier manner
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       - N/A
+
+  * what do i need to do for next scrum
+                     - Finding out tools to assist in the project
+                     - Adding to trello account
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - N/A
+
+  * what do i need to do for next scrum
+                     - Find online tools and resources that enable us to do our development job in a more easier manner
+                     - Setting up trello account
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
 
 
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 Sunday the 19th:
-Re-create database and EER diagram
-Add content to Trello
-Decide on splitting eventual tasks 
-Create basic template of website
+Olivier:
+  * what have I done since last scrum
+                       - Online resources like tutorials found that would help in the project
+                       - Created github repository
+                       - Came up with database design
+ 
+
+  * what do i need to do for next scrum
+                     - Re-create database and EER diagram
+                     - Add content to Trello
+                     - Decide on splitting eventual tasks
+                     - Create basic template of website
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
 
 
+
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       - N/A
+ 
+
+  * what do i need to do for next scrum
+                       - create an amazon account
+                       - create an RDS instance
+                       - link up mysql (or chosen database system) and amazon web services
+                       - create account with heroku and test uploading the existing version of the project, and test out github hosting capabilities
+                     
+
+  * are there any problems stopping me or need help with
+                     - to look out for ways for connecting react project with amazon RDS instance and the errors/troubles that come along with it
+
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - Setup trello account
+                       - Added to trello account
+ 
+
+  * what do i need to do for next scrum
+                       - design a homepage
+                     
+
+  * are there any problems stopping me or need help with
+                     - to find out what homepage looks best and intuitive for a website like this and to make sure the template can sustain real life usage when converting to actual interface
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 Monday the 20th: 
-What we've done:
-Did the database, did the trello
+Olivier:
+  * what have I done since last scrum
+                       - Database is finalized
+                       - Trello is finalized
+ 
 
-To do:
-How to assign roles to users and admin
-Adapt the database to our needs
+  * what do i need to do for next scrum
+                     - Assign roles to users and admin
+                     - Keep adapting the database for our needs
+                     
 
-Need help with: nothing!
+  * are there any problems stopping me or need help with
+                     - encountering errors due to database design, need to read more to understand the system and to adapt for further changes down the road
+
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       - Created amazon account
+                       - Create heroku account
+ 
+
+  * what do i need to do for next scrum
+                     - Look out for ways to use amazon S3 with our project
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - Created a homepage of sorts, needs to be finalized
+ 
+
+  * what do i need to do for next scrum
+                     - Implement threads (posts) for the project
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
 
 
+--------------------------------------------------------------------------------------------------------------------------------
 Tuesday the 21st:
-What we've done:
-Connected the database, created registration
+Olivier:
+  * what have I done since last scrum
+                       - Connected the database
+                       - Created registration
+ 
 
-To do:
-Create a search bar
-Create an admin role
-Create a dashboard for the admin/user
+  * what do i need to do for next scrum
+                     - Create search bar
+                     - Create admin role
+                     
+                     
 
+  * are there any problems stopping me or need help with
+                     - Need to make sure the data is consistently being fetched/sent to and from the database
+
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       - 
+ 
+
+  * what do i need to do for next scrum
+                     - Create a dashboard for the admin/user
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - Started with the threads
+ 
+
+  * what do i need to do for next scrum
+                     - user registration and login
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+                     
+                 
+--------------------------------------------------------------------------------------------------------------------------------
+Wednesday the 22nd:
 
