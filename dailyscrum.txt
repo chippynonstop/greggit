@@ -237,3 +237,48 @@ Jack:
 
   * are there any problems stopping me or need help with
                      - N/A
+                     --------------------------------------------------------------------------------------------------------------------------------
+Thursday the 23nd:
+
+Olivier:
+  * what have I done since last scrum
+                      - I hosted the website and tried to host the database
+                      
+ 
+
+  * what do i need to do for next scrum
+                     - Try to fix problems
+                     - Add functionalities for subreddits
+                     
+                     
+
+  * are there any problems stopping me or need help with
+                     - Authentication
+
+-------------------------------------
+Muhammad:
+  * what have I done since last scrum
+                       -Looked into users login/registration/dashboard
+ 
+
+  * what do i need to do for next scrum
+                     - Look into database hosting/creating components for the project
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
+
+
+-------------------------------------
+Jack:
+  * what have I done since last scrum
+                       - Worked on the post & comment functionalities
+                       
+ 
+
+  * what do i need to do for next scrum
+                     - Continue working on post & comments
+                     
+
+  * are there any problems stopping me or need help with
+                     - Troubleshoot where some functionalities might not be working
