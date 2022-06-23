@@ -26,7 +26,7 @@ function CreatePost() {
                     <Field id="inputCreatePost" name="title" placeholder="title..." />
                     <label>Body:</label>
                     <ErrorMessage name="body" component="span" />
-                    <Field id="inputCreatePost" name="body" placeholder="title..." />
+                    <Field component="textarea" name="body" rows="4" value={""} />
 
                     <button type="submit">Create Post</button>
                 </Form>

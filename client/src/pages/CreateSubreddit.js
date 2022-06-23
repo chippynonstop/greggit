@@ -1,9 +1,12 @@
 import React from 'react';
 import {Formik, Form, Field, ErrorMessage} from 'formik';
 import * as Yup from 'yup';
-import axios from "axios"; 
+import axios from "axios";
+import {useNavigate} from "react-router-dom"; 
 
 function CreateSubreddit() {
+    let navigate = useNavigate();
+
     const initialValues = {
         name: "",
         description: "",
@@ -18,6 +21,7 @@ function CreateSubreddit() {
         //console.log(data);
         axios.post("http://localhost:3001/subreddits", data).then((response) => {
             console.log("subreddit created...");
+            navigate("/");
         });
     };
 

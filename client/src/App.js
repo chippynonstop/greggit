@@ -2,6 +2,8 @@ import './App.css';
 import {BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 import Home from './pages/Home';
 import CreateSubreddit from './pages/CreateSubreddit';
+import CreatePost from './pages/CreatePost';
+import PostsList from './pages/PostsList';
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
 		    <Routes>
 		      <Route path="/" element={<Home/>} />
           <Route path="/createsubreddit" element={<CreateSubreddit/>} />
+          <Route path="/subreddit/:id" element={<PostsList/>} />
 		    </Routes>
 		  </Router>
     </div>
