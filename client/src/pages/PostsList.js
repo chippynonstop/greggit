@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, {useEffect, useState} from 'react';
 import {useParams} from "react-router-dom";
 import {useNavigate} from "react-router-dom";
+import Post from './Post';
 
 
 function PostsList() {
@@ -19,7 +20,7 @@ function PostsList() {
         /* axios.post("http://localhost:3001/post").then((response) => {       //add a post
             navigate("/");
         }); */
-        let path = `http://localhost:3001/post`;
+        let path = `/post`;
         navigate(path);
     }
 
@@ -27,10 +28,10 @@ function PostsList() {
         <div className='postPage'>
             <div className='leftSide'>
                 <div className='listOfPosts'>
-                    {postList.map((post, key) => {
+                    {postList.map((value, key) => {
                         return(
-                            <div key={key} className='post'>
-                                {post.title}                    {/*get author ID somehow*/}
+                            <div key={key} className='post' onClick={() => {navigate(`/post/${value.id}`)}}>
+                                {value.title}                    {/*get author ID somehow*/}
                             </div>
                         );
                     })}

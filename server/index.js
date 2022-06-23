@@ -9,6 +9,10 @@ app.use(cors());
 //Routers
 const subredditRouter = require('./routes/Subreddits');
 app.use("/subreddits", subredditRouter);
+const postRouter = require('./routes/Posts');
+app.use("/posts", postRouter);
+const commentRouter = require('./routes/Comments');
+app.use("/comments", commentRouter);
 
 db.sequelize.sync().then(() => {
     app.listen(3001, () => {

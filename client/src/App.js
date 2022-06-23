@@ -18,6 +18,7 @@ function App() {
 		      <Route path="/" element={<Home/>} />
           <Route path="/createsubreddit" element={<CreateSubreddit/>} />
           <Route path="/subreddit/:id" element={<PostsList/>} />
+          <Route path="/createpost" element={<CreatePost/>} />
 		    </Routes>
 		  </Router>
     </div>
