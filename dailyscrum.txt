@@ -282,3 +282,25 @@ Jack:
 
   * are there any problems stopping me or need help with
                      - Troubleshoot where some functionalities might not be working
+
+Friday 24 June
+
+Olivier:
+
+-------------------------------------
+
+Muhammad:
+
+-------------------------------------
+
+Jack:
+* what have I done since last scrum
+                       - Worked on the User, Login/Registration, JWT & Authentication
+                       
+
+  * what do i need to do for next scrum
+                     - Troubleshoot any errors
+                     
+
+  * are there any problems stopping me or need help with
+                     - I need to figure out what the error means: Error: Route.post() requires a callback function but got a [object Undefined]
