@@ -5,12 +5,40 @@ import axios from 'axios';
 function Post() {
     let {id} = useParams();
     const [postObject, setPostObject] = useState({});
+    const [comments, setComments] = useState([]);
+    const [newComment, setNewComment] = useState("");
 
     useEffect(() => {
         axios.get(`http://localhost:3001/posts/${id}`).then((response) => {	//need to fix the URL at a later time to redirect to the proper page
             setPostObject(response.data);
         });
+
+        axios.get(`http://localhost:3001/comments/${id}`).then((response) => {
+            setComments(response.data);
+        });
    }, []);
+
+   const addComment = () => {
+        axios.post("http://localhost:3001/comments", {
+            body: newComment, post_id: id
+        },
+        {
+            headers: {
+                accessToken: sessionStorage.getItem("accessToken"),
+            },
+        }
+        ).then((response) => {
+            if(response.data.error){
+                alert(response.data.error);
+            }
+            else{
+                //console.log("Comment added");
+                const commentToAdd = {body: newComment};    //grab the comment being added
+                setComments([...comments, commentToAdd]);   //take whatever we previously had and add the new comment to it
+                setNewComment("");  //once the comment is added/displayed, we set to empty so that the input is cleared
+            }
+        });
+   };
 
     return(
         <div className='postPage'>
@@ -21,7 +49,17 @@ function Post() {
                     <div className='footer'>{postObject.author_Id}</div> {/*need to get users.username*/}
 		        </div>
             </div>
-            <div className='rightSide'>Comment Section</div>
+            <div className='rightSide'>
+                <div className='addCommentContainer'>
+                    <input type='text' placeholder='Comment...' value={newComment} onChange={(event) => {setNewComment(event.target.value)}} />
+                    <button onClick={addComment}>Add Comment</button>
+                </div>
+                <div className='listOfComments'>
+                    {comments.map((comment, key) => {
+                        return <div key={key} className="comment">{comment.body}</div>
+                    })}
+                </div>
+            </div>
         </div>
     );
 }

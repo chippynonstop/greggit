@@ -11,8 +11,8 @@ const subredditRouter = require('./routes/Subreddits');
 app.use("/subreddits", subredditRouter);
 const postRouter = require('./routes/Posts');
 app.use("/posts", postRouter);
-const commentRouter = require('./routes/Comments');
-app.use("/comments", commentRouter);
+const commentsRouter = require('./routes/Comments');
+app.use("/comments", commentsRouter);
 const usersRouter = require('./routes/Users');
 app.use("/auth", usersRouter);
 
