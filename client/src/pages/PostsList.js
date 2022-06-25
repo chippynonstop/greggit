@@ -11,7 +11,7 @@ function PostsList() {
     const [postList, setPostList] = useState([]);
 
     useEffect(() => {
-        axios.get(`http://localhost:3001/subreddit/${id}`).then((response) => {   //reddits i/o posts
+        axios.get(`http://localhost:3001/posts/${id}`).then((response) => {   //reddits i/o posts http://localhost:3001/subreddit/${id}
             setPostList(response.data);
         });
     }, []);

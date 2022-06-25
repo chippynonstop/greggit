@@ -14,10 +14,12 @@ router.post("/", async (req, res) => {
     res.json(subreddit);
 });
 
+/*
 router.get('/:id', async (req, res) => {
     const id = req.params.id;
     const subreddit = await Subreddits.findByPk(id);
     res.json(subreddit);
 });
+*/
 
 module.exports = router;

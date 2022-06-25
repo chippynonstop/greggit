@@ -18,7 +18,7 @@ function Home () {
         <div>
             {listOfSubreddits.map((value, key) => {
                 return(
-                    <div className='post' onClick={() => {navigate(`/subreddit/${value.id}`)}}>
+                    <div className='post' onClick={() => {navigate(`/subreddit/${value.id}`)}}>     {/* `/subreddit/${value.id}` */}
                         <div className="title">{value.name}</div>
                         <div className="body">{value.description}</div>
                     </div>

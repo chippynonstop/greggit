@@ -9,6 +9,8 @@ import Login from './pages/Login';
 import {AuthContext} from './helpers/AuthContext';
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import ErrorPage from './pages/ErrorPage';
+import Post from './pages/Post';
 
 function App() {
   const [authState, setAuthState] = useState(false);
@@ -48,8 +50,10 @@ function App() {
             <Route path="/createsubreddit" element={<CreateSubreddit/>} />
             <Route path="/subreddit/:id" element={<PostsList/>} />
             <Route path="/createpost" element={<CreatePost/>} />
+            <Route path="/post/:id" element={<Post/>} />   {/*add */}
             <Route path="/login" element={<Login/>} />
             <Route path="/registration" element={<Registration/>} />
+            <Route path="*" element={<ErrorPage/>} />
           </Routes>
         </Router>
     </AuthContext.Provider>

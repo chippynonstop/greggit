@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const {Posts} = require('../models');
+const {validateToken} = require("../middlewares/AuthMiddleware");
 
 router.get('/posts', async (req, res) => {
     const listOfPosts = await Posts.findAll();
@@ -19,7 +20,7 @@ router.get('/post/:id', async (req, res) => {
     res.json(post);
 });
 
-router.post("/post", async (req, res) => {
+router.post("/post", validateToken, async (req, res) => {
     const post = req.body;
     await Posts.create(post);   //insert into DB
     res.json(post);     //return the info that was inserted into DB
