@@ -285,7 +285,18 @@ Jack:
 
 Friday 24 June
 
-Olivier:
+Olivier: 
+ * what have I done since last scrum
+                       - Worked on the front-end and trying to host the database
+                       
+ 
+
+  * what do i need to do for next scrum
+                     - Continue trying to find solutions for the database problem
+                     
+
+  * are there any problems stopping me or need help with
+                     - when the database is hosted, the message secretOrPrivateKey must have a value keeps coming up
 
 -------------------------------------
 
@@ -328,5 +339,18 @@ Jack:
 
   * are there any problems stopping me or need help with
                      - I need to figure out what the error means: Error: Route.post() requires a callback function but got a [object Undefined]
+                     
+Olivier: 
+ * what have I done since last scrum
+                       - Believe it or not, I tried to fix the database hosting
+                       
+ 
+
+  * what do i need to do for next scrum
+                     - Fix the secretorprivatekey error, make the website look clean, fix bugs
+                     
+
+  * are there any problems stopping me or need help with
+                     - when the database is hosted, the message secretOrPrivateKey must have a value keeps coming up
 
 -------------------------------------
