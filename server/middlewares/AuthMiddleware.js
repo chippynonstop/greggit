@@ -14,6 +14,7 @@ const validateToken = (req, res, next) => {
 
     try{
         const validToken = verify(accessToken, "X7B78W94jySYsPg6");     //verify accessToken with the secret key
+        req.user = validToken;  //---
 
         if(validToken){
             return next();      //token is valid, return to and continue with the request

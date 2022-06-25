@@ -24,7 +24,7 @@ function Post() {
         },
         {
             headers: {
-                accessToken: sessionStorage.getItem("accessToken"),
+                accessToken: localStorage.getItem("accessToken"),
             },
         }
         ).then((response) => {
@@ -33,7 +33,7 @@ function Post() {
             }
             else{
                 //console.log("Comment added");
-                const commentToAdd = {body: newComment};    //grab the comment being added
+                const commentToAdd = {body: newComment, author_Id: response.data.author_Id};    //-- grab the comment being added
                 setComments([...comments, commentToAdd]);   //take whatever we previously had and add the new comment to it
                 setNewComment("");  //once the comment is added/displayed, we set to empty so that the input is cleared
             }
@@ -56,7 +56,12 @@ function Post() {
                 </div>
                 <div className='listOfComments'>
                     {comments.map((comment, key) => {
-                        return <div key={key} className="comment">{comment.body}</div>
+                        return (
+                            <div key={key} className="comment">
+                                {comment.body}
+                                <label>UserId: {comment.author_Id}</label>  
+                            </div>
+                        );
                     })}
                 </div>
             </div>

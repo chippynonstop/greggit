@@ -6,28 +6,53 @@ import CreatePost from './pages/CreatePost';
 import PostsList from './pages/PostsList';
 import Registration from './pages/Registration';
 import Login from './pages/Login';
+import {AuthContext} from './helpers/AuthContext';
+import {useState, useEffect} from 'react';
+import axios from 'axios';
 
 function App() {
+  const [authState, setAuthState] = useState(false);
+
+  useEffect(() => {
+    axios.get('http://localhost:3001/auth/auth', {
+      headers: {
+        accessToken: localStorage.getItem('accessToken'),
+      }}).then((response) => {
+        if(response.data.error){
+          setAuthState(false);
+        }
+        else{
+          setAuthState(true);
+        }
+      });
+  }, []);
 
   return (
     <div className="App">
-      <Router>
-        <div className="navbar">
-          <div className='heading'>greggit</div>
-	        <Link to="/">Subreddits</Link>
-          <Link to="/createsubreddit">Create Subreddit</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/registration">Register</Link>
-	      </div>
-		    <Routes>
-		      <Route path="/" element={<Home/>} />
-          <Route path="/createsubreddit" element={<CreateSubreddit/>} />
-          <Route path="/subreddit/:id" element={<PostsList/>} />
-          <Route path="/createpost" element={<CreatePost/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/registration" element={<Registration/>} />
-		    </Routes>
-		  </Router>
+      <AuthContext.Provider value={{authState, setAuthState}}>
+        <Router>
+          <div className="navbar">
+            <div className='heading'>greggit</div>
+            <Link to="/">Subreddits</Link>
+            <Link to="/createsubreddit">Create Subreddit</Link>
+            {!authState && (
+              <>
+                <Link to="/login">Login</Link>
+                <Link to="/registration">Register</Link>
+              </>
+            )}
+            
+          </div>
+          <Routes>
+            <Route path="/" element={<Home/>} />
+            <Route path="/createsubreddit" element={<CreateSubreddit/>} />
+            <Route path="/subreddit/:id" element={<PostsList/>} />
+            <Route path="/createpost" element={<CreatePost/>} />
+            <Route path="/login" element={<Login/>} />
+            <Route path="/registration" element={<Registration/>} />
+          </Routes>
+        </Router>
+    </AuthContext.Provider>
     </div>
   );
 }

@@ -4,6 +4,7 @@ const {Users} = require('../models');
 const bcrypt = require('bcrypt');
 
 const {sign} = require('jsonwebtoken');
+const {validateToken} = require('../middlewares/AuthMiddleware');
 
 
 //route for Registration
@@ -37,6 +38,10 @@ router.post('/login', async (req, res) => {
             }
         });
     }
+});
+
+router.get('/auth', validateToken, (req, res) => {
+    res.json(req.user);
 });
 
 module.exports = router;
