@@ -7,6 +7,12 @@ router.get('/posts', async (req, res) => {
     res.json(listOfPosts);
 });
 
+router.get('/:subredditId', async (req, res) => {
+    const subredditId = req.params.subredditId;
+    const posts = await Posts.findAll({where: {subreddit_id: subredditId}});
+    res.json(posts);
+})
+
 router.get('/post/:id', async (req, res) => {
     const id = req.params.id;
     const post = await Posts.findByPk(id);

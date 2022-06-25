@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Router>
         <div className="navbar">
-        <div className='heading'>greggit</div>
+          <div className='heading'>greggit</div>
 	        <Link to="/">Subreddits</Link>
           <Link to="/createsubreddit">Create Subreddit</Link>
           <Link to="/login">Login</Link>

@@ -4,8 +4,8 @@ const {Comments} = require('../models');
 const {validateToken} = require("../middlewares/AuthMiddleware");
 
 router.get('/:postId', async (req, res) => {
-    const postId = req.params.postId;
-    const comments = await Comments.findAll({ where: {PostId: postId}});		//get all comments with the postId equal to the postId being queried
+    const postId = req.params.postId;   //postId
+    const comments = await Comments.findAll({ where: {post_id: postId}});		//get all comments with the postId equal to the postId being queried
     res.json(comments);
 });
 

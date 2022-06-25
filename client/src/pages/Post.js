@@ -29,7 +29,7 @@ function Post() {
         }
         ).then((response) => {
             if(response.data.error){
-                alert(response.data.error);
+                alert("Please log in...");
             }
             else{
                 //console.log("Comment added");

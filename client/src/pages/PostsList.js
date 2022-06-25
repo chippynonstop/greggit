@@ -17,11 +17,11 @@ function PostsList() {
     }, []);
 
     const addPost = () => {
-        /* axios.post("http://localhost:3001/post").then((response) => {       //add a post
-            navigate("/");
-        }); */
-        let path = `/post`;
-        navigate(path);
+        axios.post("http://localhost:3001/post").then((response) => {       //add a post
+            navigate("/post");
+        });
+        //let path = `/post`;
+        //navigate(path);
     }
 
     return(
