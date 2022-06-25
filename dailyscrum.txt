@@ -314,3 +314,19 @@ Jack:
 
   * are there any problems stopping me or need help with
                      - I need to figure out what the error means: Error: Route.post() requires a callback function but got a [object Undefined]
+
+Saturday 25 June
+
+Jack:
+* what have I done since last scrum
+                       - Looked into error: Error: Route.post() requires a callback function but got a [object Undefined]
+                       
+
+  * what do i need to do for next scrum
+                     - Continue to troubleshoot the route post error
+                     
+
+  * are there any problems stopping me or need help with
+                     - I need to figure out what the error means: Error: Route.post() requires a callback function but got a [object Undefined]
+
+-------------------------------------
