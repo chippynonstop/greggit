@@ -290,6 +290,16 @@ Olivier:
 -------------------------------------
 
 Muhammad:
+* what have I done since last scrum
+                       - postgresql database working with react
+ 
+
+  * what do i need to do for next scrum
+                     - looked into 3 layers of subreddit, post, and comments
+                     
+
+  * are there any problems stopping me or need help with
+                     - N/A
 
 -------------------------------------
 
